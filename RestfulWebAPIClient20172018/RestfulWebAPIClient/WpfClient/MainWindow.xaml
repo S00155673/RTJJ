@@ -1,0 +1,18 @@
+﻿<Window xmlns:GameMVVM="clr-namespace:WpfClient.GameMVVM"  x:Class="WpfClient.MainWindow"
+        
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Grid>
+        <!--<ListBox x:Name="listBox" HorizontalAlignment="Left" Height="73" Margin="71,40,0,0" VerticalAlignment="Top" Width="255" />-->
+        <StackPanel>
+            <GameMVVM:GamePlayerView VerticalAlignment="Top" />
+            <GameMVVM:PlayerInfoView VerticalAlignment="Bottom"/>
+        </StackPanel>
+    </Grid>
+</Window>

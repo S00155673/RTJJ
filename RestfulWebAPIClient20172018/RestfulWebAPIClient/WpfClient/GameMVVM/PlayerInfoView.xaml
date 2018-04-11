@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="WpfClient.GameMVVM.PlayerInfoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfClient.GameMVVM"
+             xmlns:playerInfo="clr-namespace:WpfClient.GameMVVM"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <!--<UserControl.DataContext>
+        <playerInfo:PlayerInfoViewModel/>
+    </UserControl.DataContext>-->
+    <Grid x:Name = "FormLayoutGrid" Background = "LightGray">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+            <RowDefinition Height = "*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row = "0" Grid.Column = "0" Text = "ID" Margin = "10" HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "100"/>
+        <TextBox Name="txID" Grid.Row = "0" Grid.Column = "1" Margin = "10"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Name" Margin="10" HorizontalAlignment = "Left" VerticalAlignment = "Center" Width = "100"/>
+        <TextBox Name="txName" Grid.Row = "1" Grid.Column = "1" Margin = "10"/>
+        <TextBlock Grid.Row = "2" Grid.Column = "0" Text = "Gamer Tag" Margin = "10" HorizontalAlignment = "Left" VerticalAlignment="Center" Width = "100"/>
+        <TextBox Name="txGamerTag" Grid.Row = "2" Grid.Column = "1" Margin = "10"/>
+
+    </Grid>
+</UserControl>
