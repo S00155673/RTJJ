@@ -44,11 +44,11 @@ namespace ConsoleWebAPIClient
             {
                 Console.WriteLine("Failed to acquire Token  ");
             }
-            //ExternalGameObject gameInfo = PlayerAuthentication.getExtGame(1);
-            //Console.WriteLine(" Name: {0} \n Summary {1} \n Image URL : {2}", 
-                                //gameInfo.Name,gameInfo.Summary,gameInfo.Cover);
+            ExternalGameObject gameInfo = PlayerAuthentication.getExtGame(1);
+            Console.WriteLine(" Name: {0} \n Summary {1} \n Image URL : {2}",
+                                gameInfo.Name, gameInfo.Summary, gameInfo.Cover);
 
-            
+
             Console.ReadKey();
         }
 
