@@ -58,7 +58,7 @@ namespace RADMonoGame
             serverConnection.StateChanged += ServerConnection_StateChanged;
             proxy = serverConnection.CreateHubProxy("GameHub");
             serverConnection.Start();
-            collectableSprite = Content.Load<Texture2D>("Player 1");
+            collectableSprite = Content.Load<Texture2D>("sprite");
 
             base.Initialize();
         }
